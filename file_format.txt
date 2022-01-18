@@ -1,0 +1,28 @@
+Steps File Fromat:
+Iteration (as a number), Pacman direction (as a Direction letter*), Fruit existence (as a Boolean letter**), Fruit position if exists (as two numbers, first X then Y), Ghosts wait or move (as a Boolean letter),
+Ghosts direction (as a Direction letter), Fruit direction (as a Direction letter*).
+
+Examples:
+1 S N Y U D U D U - 
+Iteration num 1, Pacman stays, Fruit invisible hence no position, Ghosts move, 4 Ghosts directions, fruit direction (even though invisible).
+
+35 R Y 23 12 Y U D L L U -
+Iteration num 35, Pacman going right, Fruit visible, position (23,12), Ghosts move, 4 Ghosts directions, fruit direction.
+
+Result File Format:
+Iteration/s where pacman died (as a number), Iteration where pacman finished screen (as a number).
+
+Example:
+645 819 -
+Pacman died at iteration 645, Pacman finished the screen at iteration 819.
+
+*Direction letter:
+S - Stay
+U - Up
+D - Down
+L - Left
+R - Right
+
+**Boolean letter:
+Y - Yes/True
+N - No/False
